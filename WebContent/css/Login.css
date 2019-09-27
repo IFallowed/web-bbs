@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/** 清楚默认的边距 */
+body,div,ul,li{
+	margin: 0px;
+	padding: 0px;
+}
+
+/** 封装浮动 */
+.lf {
+	float: left;
+}
+.rf {
+	float: right;
+}
+.clearfix:after {
+	content: ".";
+	display: block;;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.clearfix {
+	zoom:1;
+}
+.div_hidden {
+	display: none;
+}
+body {
+	position: relative;
+}
+#login_form {
+	width: 450px;
+	height: 350px;
+	border:1px solid gray;
+	position: absolute;
+	left:50%;
+	top:180px;
+	border-radius: 5px;
+}
+#register_form {
+	width: 500px;
+	height: 800px;
+	border:1px solid gray;
+}
+#form_div input {
+	width: 200px;
+}
