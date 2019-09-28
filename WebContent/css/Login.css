@@ -27,21 +27,87 @@ body,div,ul,li{
 }
 body {
 	position: relative;
+	background-image: url("../img/bg_login.jpg");
 }
-#login_form {
-	width: 450px;
-	height: 350px;
-	border:1px solid gray;
+a {
+	color: #000000;
+}
+.form_div {
+	width:512px;
+	height:450px;
+	/**background-color:#DCDCDC;*/
 	position: absolute;
 	left:50%;
-	top:180px;
+	top:120px;
 	border-radius: 5px;
+	padding: 5px;
+}
+.form_nav {
+	width: 180px;
+	height: 40px;
+	margin-left: 40px;
+	margin-bottom:2px;
+	text-align: center;
+	line-height: 40px;
+}
+
+#login_form {
+	width: 500px;
+	height: 250px;
+	border:1px solid #FFFFFF;
+	/**background-color: #FFFFFF;*/
+	border-radius: 5px;
+	padding-top: 20px;
+	
 }
 #register_form {
 	width: 500px;
-	height: 800px;
+	height: 360px;
 	border:1px solid gray;
+	border:1px solid #FFFFFF;
+	/**background-color: #FFFFFF;*/
+	border-radius: 5px;
+	padding-top: 20px;
 }
-#form_div input {
+.form_group {
+	width: 450px;
+	height:30px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+	text-align: center;
+	line-height: 30px;
+}
+
+input {
 	width: 200px;
+	height:30px;
+	float:right;
+	border:1px solid #CCCCCC;
+	border-radius:4px; 
+}
+.form_info {
+	width: 140px;
+	height: 28px;
+	/**border: 1px solid gray;*/
+	float: right;
+	margin-left: 5px;
+	font-size: 12px;
+	color:#C0C0C0;
+	text-align: left;
+}
+#login_btn,#register_btn {
+	float:left !important;
+	width:160px !important;
+	height: 40px !important;
+	margin-left: 50px;
+}
+input[type="radio"] {
+	width: 50px;
+	height:30px;
+	float: left;
+}
+.radio_label{
+	margin-left: -170px;
+	margin-right: 40px;
 }

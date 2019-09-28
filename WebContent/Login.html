@@ -14,25 +14,77 @@
 </head>
 <!-- http://demo.demohuo.top/modals/30/3074/demo/ -->
 <body>
-	<div id="form_div">
-		<div id="login_form">
-			<form role="form" class="form-horizontal" action="#" >
-				<div class="form-group">
-    				<label for="mail" class="col-sm-2 control-label">邮箱：</label>
-    				<div class="col-sm-10">
-	    				<input type="text" class="col-sm-6 form-control" id="mail" placeholder="请输入邮箱">
-    				</div>
+	<div class="form_div">
+		 <div class="form_nav">
+			<ul id="form-tab" class="nav nav-tabs">
+				<li class="active">
+					<a href="#login_form" data-toggle="tab">
+		            	登录
+		            </a>
+				</li>
+				<li>
+					<a href="#register_form" data-toggle="tab">
+		            	注册
+		            </a>
+				</li>
+			</ul>
+		</div> 
+		<div class="tab-content">
+			<div id="login_form" class="tab-pane fade in active">
+			<form role="form" action="#" >
+				<div class="form_group clearfix">
+	    			<label class="form_info"></label>
+    				<label for="login_mail">邮箱：</label>
+	    			<input type="email" id="login_mail" placeholder="请输入邮箱">
   				</div>  				
-  				<div class="form-group">
-    				<label for="password" class="col-sm-2 control-label">密码：</label>
-    				<div class="col-sm-10">
-	    				<input type="text" class="form-control" id="password" placeholder="请输入密码">
-    				</div>
+  				<div class="form_group clearfix">
+  					<label class="form_info"></label>
+    				<label for="login_password" >密码：</label>
+	    			<input type="password" id="login_password" placeholder="请输入密码">
+  				</div>
+  				<div class="form_group clearfix">
+  					<label class="form_info">4+6=</label>
+    				<label for="login_HumanCheck">人类验证：</label>
+	    			<input type="text" id="HumanCheck" placeholder="请回答后面的问题">
+  				</div>
+  				<div class="form_group clearfix">
+	    			<input type="submit" id="login_btn" class="btn btn-success active" value="登录">
   				</div>
 			</form>
 		</div>
-		<div id="register_form" class="div_hidden">
+		<div id="register_form" class="tab-pane fade">
+			<form role="form" action="#">
+				<div class="form_group clearfix">
+					<label class="form_info">example:bbs@google.com</label>
+    				<label for="register_mail">邮箱：</label>
+	    			<input type="email" id="register_mail" placeholder="请输入邮箱">
+  				</div>
+  				<div class="form_group clearfix">
+  					<label class="form_info"></label>
+    				<label for="register_name" >昵称：</label>
+	    			<input type="text" id="register_name" placeholder="请输入昵称">
+  				</div>
+  				<div class="form_group clearfix">
+  					<label class="form_info">至少6位字母数字组合</label>
+    				<label for="register_password" >密码：</label>
+	    			<input type="password" id="register_password" placeholder="请输入密码">
+  				</div>
+  				<div class="form_group clearfix">
+    				<label class="radio_label">性别：</label>
+		    		<label for="male"><input type="radio" name="sex" id="male" value="male">男</label>
+	        		<label for="female"><input type="radio" name="sex" id="female" value="female">女</label>
+  				</div>
+  				<div class="form_group clearfix">
+  					<label class="form_info">5-3</label>
+    				<label for="register_HumanCheck">人类验证：</label>
+	    			<input type="text" id="HumanCheck" placeholder="请回答后面的问题">
+  				</div> 
+  				<div class="form_group clearfix">
+	    			<input type="submit" id="register_btn" class="btn btn-success active" value="注册">
+  				</div>
+			</form>
 		</div>	
+		</div>
 	</div> 
 </body>
 </html>
