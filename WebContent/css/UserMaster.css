@@ -1,0 +1,54 @@
+@charset "UTF-8";
+html,body {
+	height:100%;
+	background-color: #DCDCDC;
+}
+body,ul,li,div {
+	margin: 0px;
+	padding: 0px;
+}
+.lf {
+	float: left;
+}
+.rf {
+	float: right;
+}
+.clearfix:after {
+	content: ".";
+	display: block;;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.clearfix {
+	zoom:1;
+}
+.div_hidden {
+	display: none;
+}
+a {
+	color: #000000;
+}
+.left_nav {
+	width:200px;
+	height:770px;;
+	background-color: #393D49;
+	padding-top: 20px;
+}
+.left_nav ul {
+	list-style-type: none;
+}
+
+.left_nav ul div {
+	width: 160px;
+	height: 50px;
+	border: 1px solid #FFFFFF;
+	padding-left:40px;
+	line-height: 50px;
+	color:#FFFFFF;
+	font-size: 14px;
+	background-image: url("../img/fly_logo.jpg");
+	/**background-repeat:no-repeat;
+	background-position:-147px -131px;*/
+	
+}

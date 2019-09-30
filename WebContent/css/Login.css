@@ -25,13 +25,13 @@ body,div,ul,li{
 .div_hidden {
 	display: none;
 }
+a {
+	color: #000000;
+}
 body {
 	width:100%;
 	background-image: url("../img/bg_login.jpg");
 	position: relative;
-}
-a {
-	color: #000000;
 }
 .form_div {
 	width:512px;
