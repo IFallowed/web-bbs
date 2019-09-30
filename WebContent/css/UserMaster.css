@@ -26,8 +26,8 @@ body,ul,li,div {
 .div_hidden {
 	display: none;
 }
-a {
-	color: #000000;
+a,a:hover {
+	text-decoration: none;
 }
 .left_nav {
 	width:200px;
@@ -39,16 +39,23 @@ a {
 	list-style-type: none;
 }
 
-.left_nav ul div {
-	width: 160px;
+.left_nav li {
+	width: 140px;
 	height: 50px;
-	border: 1px solid #FFFFFF;
-	padding-left:40px;
+	padding-left:55px;
 	line-height: 50px;
 	color:#FFFFFF;
 	font-size: 14px;
 	background-image: url("../img/fly_logo.jpg");
-	/**background-repeat:no-repeat;
-	background-position:-147px -131px;*/git
+	background-repeat:no-repeat;
+	background-size:30px 30px;
+	background-position:20px 10px;
 	
+}
+.left_nav li:hover {
+	border-left: 5px solid #009688;
+	background-color:  	#708090;
+}
+.left_nav a {
+	color: #FFFFFF;
 }
